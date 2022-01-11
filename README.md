@@ -1,6 +1,6 @@
 --------
 <p align="center">
-<img src="https://github.com/Legendary-Person/CodeHolics-Chat-Bot/blob/master/app/src/main/res/drawable-v24/codeholic.gif">
+<img src="https://github.com/Legendary-Person/CodeHolics-Chat-Bot/blob/master/images-readme/CodeHolic's%20Point%20for%20GitHub%20(1).gif">
 </p>
 
 --------
