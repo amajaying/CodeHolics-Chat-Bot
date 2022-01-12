@@ -19,7 +19,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="100dp"
         android:contentDescription="@string/welcome"
-        app:srcCompat="@drawable/welcome"
+        app:srcCompat="@drawable/level__1_"
         tools:ignore="ImageContrastCheck" />
 
     <LinearLayout
@@ -31,12 +31,14 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/email1"
             style="@style/TextInputLayout"
+            android:selectAllOnFocus="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/prompt_email">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/email"
+                android:id="@+id/username"
+                android:importantForAutofill="no"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress" />
@@ -49,22 +51,28 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/prompt_password"
+            android:selectAllOnFocus="true"
             android:paddingTop="@dimen/margin_medium"
             app:passwordToggleEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/password"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
                 android:layout_width="match_parent"
+
                 android:layout_height="wrap_content"
                 android:inputType="textPassword" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/loginbtn"
+            android:id="@+id/login"
             style="@style/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:enabled="false"
             android:layout_marginVertical="@dimen/margin_medium"
             android:text="@string/action_sign_in"
             android:textAllCaps="false"
@@ -93,6 +101,13 @@
             app:srcCompat="@drawable/github1600"
             tools:ignore="ImageContrastCheck" />
 
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="128dp"
+            android:layout_height="123dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
     </LinearLayout>
 </androidx.appcompat.widget.LinearLayoutCompat>
 
