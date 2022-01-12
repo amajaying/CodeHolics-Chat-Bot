@@ -13,4 +13,19 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxCornerRadiusTopStart">@dimen/cardCornerRadius</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/cardCornerRadius</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/cardCornerRadius</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/cardCornerRadius</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+    </style>
+
+    <style name="button" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">10dp</item>
+        <item name="android:padding">@dimen/margin_medium</item>
+    </style>
+
 </resources>

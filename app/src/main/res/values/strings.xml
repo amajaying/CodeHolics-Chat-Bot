@@ -10,5 +10,5 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="github">GitHub</string>
-
+    <string name="singinGithub">Signin using Github</string>
 </resources>
